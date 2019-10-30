@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Commands\" />
+    <Folder Include="Queries\" />
+    <Folder Include="CommandHandlers\" />
+    <Folder Include="QueryHandlers\" />
+    <Folder Include="Commands\OrderCommands\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Queries\CustomizationQueries\" />
+    <Folder Include="Queries\OrderQueries\" />
+    <Folder Include="Queries\PIzzaSizeQueries\" />
+    <Folder Include="Queries\FlavorQueries\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Flunt.Br" Version="1.2.0" />
+    <PackageReference Include="Flunt" Version="1.0.4" />
+  </ItemGroup>
+</Project>
